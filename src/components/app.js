@@ -15,12 +15,14 @@ export default class App extends Component {
           <div>
             <NavBar />
 
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contact" component={Contact} />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/contact" component={Contact} />
+            </Switch>
 
-            <h1>Cool Resturant</h1>
-            <h2>Good food</h2>
+            <h1>Cool Website</h1>
+            <h2>Awesome Content</h2>
             
             <hr />
 

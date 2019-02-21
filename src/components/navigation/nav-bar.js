@@ -8,7 +8,7 @@ export default class NavBar extends Component{
 
     render(){
         return(
-            <div>
+            <div className = 'nav-links'>
                 <NavLink exact to="/" activeClassName="nav-link-active">
                 Home
                 </NavLink>
@@ -20,6 +20,7 @@ export default class NavBar extends Component{
                 <NavLink to="/contact" activeClassName="nav-link-active">
                     Contact
                 </NavLink>
+
             </div>
         )
     }
